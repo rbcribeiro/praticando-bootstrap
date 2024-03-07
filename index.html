@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1 class="text-center p-4">Animais Silvestres</h1>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-blok w-100" src="./img/camaleao.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Camaleão</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-blok w-100" src="./img/coala.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Coala</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-blok w-100" src="./img/flamingo.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Flamingo Rosa</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-blok w-100" src="./img/iguana.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Iguana</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-blok w-100" src="./img/pavao.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Pavão</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center p-4">Algumas curiosidades sobre esses animais</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <article class="card">
+                    <img src="./img/camaleao.jpg"
+                        class="card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-title">Camaleão</h4>
+                        <p class="card-text">Curiosidades sobre o camaleão
+                            A mudança de coloração não está relacionada apenas com a camuflagem, estando ligada também a outras funções, como a atração de parceiros e defesa de território. Podem projetar a língua até uma distância de quase o dobro de seu tamanho corporal.</p>
+                        <a href="https://www.biologianet.com/biodiversidade/camaleao.htm#:~:text=Curiosidades%20sobre%20o%20camale%C3%A3o&text=A%20mudan%C3%A7a%20de%20colora%C3%A7%C3%A3o%20n%C3%A3o,dobro%20de%20seu%20tamanho%20corporal." class="btn btn-primary" target="_blank">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card">
+                    <img src="./img/flamingo.jpg"
+                        class="card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-title">Flamingo</h4>
+                        <p class="card-text">Os flamingos não possuem glândulas mamárias, mas podem produzir uma espécie de “leite” em seus tratos digestivos superiores. Tanto os machos, quanto as fêmeas produzem essa substância para alimentar seus filhotes, que contém poteína, gordura e glóbulos vermelhos e brancos, como o leite dos mamíferos.</p>
+                        <a href="https://vidadebicho.globo.com/comportamento/noticia/2023/04/flamingos-15-curiosidades-sobre-as-grandes-aves-cor-de-rosa.ghtml" class="btn btn-primary" target="_blank">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card">
+                    <img src="./img/iguana.jpg"
+                        class="card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-title">Iguana</h4>
+                        <p class="card-text">Tem hábitos diurnos e são uma espécie arborícola. Ela é quase sempre encontrada próxima a corpos d'água. As iguanas precisam de sol e sombra para realizarem a termorregulação, encontrando refúgio em árvores.</p>
+                        <a href="https://www.petz.com.br/blog/curiosidades/iguana-bota-ovo/#:~:text=De%20modo%20geral%2C%20uma%20das,termorregula%C3%A7%C3%A3o%2C%20encontrando%20ref%C3%BAgio%20em%20%C3%A1rvores." class="btn btn-primary" target="_blank">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card">
+                    <img src="./img/pavao.jpg"
+                        class="card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-title">Pavão</h4>
+                        <p class="card-text">A ave abre o seu leque de penas coloridas à procura de uma fêmea, quando quer cortejar. Na época de acasalamento, os machos também costumam brigar para demarcar seu território e, para isso, utilizam suas fortes asas e a sua espora.</p>
+                        <a href="https://blog.cobasi.com.br/pavao-conheca-mais-sobre-este-passaro-magnifico/#:~:text=Curiosidades%20sobre%20o%20pav%C3%A3o&text=A%20ave%20abre%20o%20seu,asas%20e%20a%20sua%20espora." class="btn btn-primary" target="_blank">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="card">
+                    <img src="./img/coala.jpg"
+                        class="card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-title">Coala</h4>
+                        <p class="card-text">Os coalas, que são animais herbívoros, alimentam-se de folhas de eucalipto e, ocasionalmente, de folhas de outras plantas.</p>
+                        <a href="https://mundoeducacao.uol.com.br/biologia/coala.htm#:~:text=Os%20coalas%2C%20que%20s%C3%A3o%20animais,quilos%20de%20folhas%20por%20dia." class="btn btn-primary" target="_blank">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <p class="text-center">2024 &copy; Renata Ribeiro - Todos os direitos reservados</p>
+        </div>
+      </footer>
+      
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
